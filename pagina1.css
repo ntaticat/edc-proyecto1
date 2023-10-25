@@ -44,15 +44,21 @@ header {
 .navigation-item {
     display: inline-block;
     padding: 15px 25px;
-    color: green;
+}
+
+.navigation-item-link {
+    text-decoration: none;
+    color: rgb(6, 192, 0);
+
 }
 
 /* Article */
 .main-promo-container {
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
+    display: inline-block;
     width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 
 /* image */
@@ -61,30 +67,37 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: -1;
     object-fit: cover;
     object-position: center;
 }
 
 /* text */
 .main-promo-text {
-    padding: 0;
+    padding: 1em;
     margin: 0;
 
-    position: absolute;
     max-width: 60%;
-    height: auto;
-    z-index: 4;
 
-    margin: 0;
-    padding: 0;
-
-    color: gray;
+    color: #ccc;
     font-weight: bold;
     font-size: 3em;
+
+    text-align: right;
 }
 
-/* Article */
+.promo-text-vector {
+    display: inline;
+    height: 1em;
+    width: 1em;
+}
+
+.text-promo-emphasis {
+    color: #fff;
+
+}
+
+/* footer */
 .secondary-promo-container {
     display: block;
 }
